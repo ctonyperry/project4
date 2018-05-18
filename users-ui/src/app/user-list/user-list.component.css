@@ -1,0 +1,17 @@
+.user{
+    display:block;
+    padding: 5px;
+    text-align: left;
+}
+.userName{
+    display:block;
+}
+.userFirst{
+display:inline;
+}
+.userLast{
+    display:inline;
+}
+.userEmail{
+    display:block;
+}

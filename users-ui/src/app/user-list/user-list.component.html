@@ -1,0 +1,11 @@
+
+<div *ngIf="users">
+<div class="user" *ngFor="let user of users">
+  UserId: {{user.id}}
+  <span class="userName">{{user.userName}}</span>
+  <span class="firstName">{{user.firstName}} {{user.lastName}}</span>
+  <span class="userEmail">{{user.email}}</span>
+  <button routerLink="/edituser/{{user.id}}">Edit User</button>
+  <button (click)="deleteUser(user)">Delete</button>
+</div>
+</div>
