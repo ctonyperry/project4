@@ -10,7 +10,7 @@ export class ToiletSearchService {
 
     constructor(private http: HttpClient){}
 
-    getToilets() {
-        return this.http.get('https://data.cityofnewyork.us/resource/r27e-u3sy.json?borough=%27Queens%27');
+    getToilets(borough) {
+        return this.http.get('https://data.cityofnewyork.us/resource/r27e-u3sy.json?borough=%27' + borough + '%27');
     }
 }

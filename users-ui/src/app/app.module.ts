@@ -14,7 +14,6 @@ import { UserHomeComponent } from './user-home/user-home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { UserLoginComponent } from './user-login/user-login.component';
-import { PermitSearchComponent } from './permit-search/permit-search.component';
 import { ToiletSearchComponent } from './toilet-search/toilet-search.component'
 
 const routes = [
@@ -52,7 +51,6 @@ const routes = [
     NavbarComponent,
     LandingPageComponent,
     UserLoginComponent,
-    PermitSearchComponent,
     ToiletSearchComponent
   ],
   imports: [

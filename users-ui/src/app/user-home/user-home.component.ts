@@ -1,25 +1,30 @@
-import { ToiletSearchComponent } from './../toilet-search/toilet-search.component';
+
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-import { ToiletSearchComponent } from './../toiletsearch.service';
+import { ToiletSearchService } from './../toiletsearch.service';
 
 
 @Component({
   selector: 'app-user-home',
   templateUrl: './user-home.component.html',
-  styleUrls: ['./user-home.component.css']
+  styleUrls: ['./user-home.component.css'],
+  providers: [ToiletSearchService]
 })
 export class UserHomeComponent implements OnInit {
 
-  constructor(private userService: UserService, private route: ActivatedRoute) { 
+  constructor(private userService: UserService, private route: ActivatedRoute, private toiletSearchService: ToiletSearchService) { 
     this.route.params.subscribe( params => this.userId = params.userId);
   }
 
+  results: any;
   userId: number;
   user: any;
   userSubject =new Subject();
+  toiletSearchSubject = new Subject();
+
+  borough: any;
 
   ngOnInit() {
     this.userSubject
@@ -30,6 +35,14 @@ export class UserHomeComponent implements OnInit {
         })
     )
     this.getUser();
+
+    this.toiletSearchSubject
+    .subscribe(uid=>
+        this.toiletSearchService.getToilets(this.borough)
+        .subscribe(response => {
+          this.results = response;
+        })
+    )
   }
 
   getUser(){
@@ -37,4 +50,10 @@ export class UserHomeComponent implements OnInit {
 
   }
 
+  getList(borough){
+
+    this.borough = borough;
+    this.toiletSearchSubject.next();
+
+  }
 }
