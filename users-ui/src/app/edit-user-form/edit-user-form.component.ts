@@ -3,6 +3,7 @@ import { User } from '../types/user'
 import { UserService } from '../user.service';
 import { Subject } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-edit-user-form',
@@ -11,7 +12,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class EditUserFormComponent implements OnInit {
 
-  userSubject = new Subject();
+  getUserSubject = new Subject();
+  updateUserSubject = new Subject();
   user: any;
   userId: any; 
 
@@ -24,12 +26,28 @@ export class EditUserFormComponent implements OnInit {
   }
 
   getUser(){
-    this.userSubject
+    this.getUserSubject
     .subscribe(uid=>
         this.userService.getSingleUser(this.userId)
         .subscribe(response => this.user = response)
     )
-    this.userSubject.next();
+    this.getUserSubject.next();
+  }
+  updateUser(){
+    this.updateUserSubject
+    .subscribe(uid=>
+        this.userService.updateUser(this.user)
+        .subscribe(response=>{                
+               console.log(response)
+        }         
+        )
+    )
+    this.updateUserSubject.next();
+  
+
   }
 
 }
+
+
+

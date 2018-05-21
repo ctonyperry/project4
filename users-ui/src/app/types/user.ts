@@ -1,6 +1,7 @@
 export class User extends Array{
+
     id: string;
-    userName: number;
+    userName: string;
     firstName: string;
     lastName: string;
     email: string;

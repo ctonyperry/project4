@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../types/user'
+import { UserService } from '../user.service';
+import { Subject } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { FormsModule } from '@angular/forms'
+
 
 @Component({
   selector: 'app-add-user-form',
@@ -7,9 +13,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUserFormComponent implements OnInit {
 
-  constructor() { }
+  user={
+    userName:null,
+    firstName: null, 
+    lastName: null,
+    email: null
+  };
 
-  ngOnInit() {
+  addUserSubject = new Subject();
+
+  constructor(private userService: UserService) { 
+
   }
 
+  ngOnInit() {
+
+
+  }
+
+  addUser(user){
+    this.addUserSubject
+    .subscribe(uid=>
+        this.userService.addUser(user)
+        .subscribe(response=>{                  
+        }         
+        )
+    )
+    this.addUserSubject.next();
+
+
+  }
 }

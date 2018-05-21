@@ -1,17 +1,38 @@
-.user{
-    display:block;
+/* .user{
     padding: 5px;
-    text-align: left;
+    display: flex;        
+    flex-direction: row;   
+    flex-wrap: wrap;       
+    justify-content: space-around;        
+    align-content: space-around;
+    align-items: flex-start;
+
 }
-.userName{
-    display:block;
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width:600px;
+    overflow: auto;
+    max-height: 500px;
 }
-.userFirst{
-display:inline;
+
+.user span{
+    padding:15px;
+    flex-grow: 0;
+    text-align:left;
+    order: 0;
+    flex: 0 0 auto;
+    align-self: auto;
 }
-.userLast{
+.user button{
+    width:100px;
     display:inline;
 }
-.userEmail{
-    display:block;
+.user:nth-child(even){
+    background-color:silver;
 }
+.user:nth-child(even){
+    background-color:papayawhip;
+}
+.userName{ */

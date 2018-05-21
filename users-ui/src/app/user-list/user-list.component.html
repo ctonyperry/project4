@@ -1,11 +1,24 @@
 
+<a routerLink="/adduser">Add User</a>
+
 <div *ngIf="users">
-<div class="user" *ngFor="let user of users">
-  UserId: {{user.id}}
-  <span class="userName">{{user.userName}}</span>
-  <span class="firstName">{{user.firstName}} {{user.lastName}}</span>
-  <span class="userEmail">{{user.email}}</span>
-  <button routerLink="/edituser/{{user.id}}">Edit User</button>
-  <button (click)="deleteUser(user)">Delete</button>
+<div class="user flex-container" *ngFor="let user of users">
+  <div class="user" *ngIf="!editing">
+  <span class="userName">User Name: {{user.userName}}</span>
+  <span class="firstName">Name: {{user.firstName}} {{user.lastName}}</span>
+  <span class="userEmail">Email: {{user.email}}</span>
+  <button (click)="enterEditMode">Edit User</button>
+  <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete!</button>
+  </div>
+  <div *ngIf="editing" class="user">
+      <span class="userName">User Name: </span>
+      <span class="firstName">Name: {{user.firstName}} {{user.lastName}}</span>
+      <span class="userEmail">Email: {{user.email}}</span>
+      <button (click)="leaveEditMode">Update User</button>
+      <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete</button>
+  </div>
+
+
+
 </div>
 </div>
