@@ -10,7 +10,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AddUserComponent } from './add-user/add-user.component';
-import { UserHomeComponent } from './user-home/user-home.component'
+import { UserHomeComponent } from './user-home/user-home.component';
+import { NavbarComponent } from './navbar/navbar.component'
 
 const routes = [
   {
@@ -38,7 +39,8 @@ const routes = [
     AddUserFormComponent,
     UserListComponent,
     AddUserComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
