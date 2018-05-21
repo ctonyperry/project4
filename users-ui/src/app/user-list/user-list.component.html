@@ -10,6 +10,7 @@
         <button (click)="enterEditMode(user)">Edit User</button>
         <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete</button>
     </span>
+    <a routerLink="user/{{user.id}}">Impersonate User</a>
   </div>
   <!--Edit Form Template-->
   <div *ngIf="this.user.editing">

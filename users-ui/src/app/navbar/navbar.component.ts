@@ -10,10 +10,12 @@ export class NavbarComponent implements OnInit {
 
   isHomeActive : any;
   isAddUserActive: any;
-  constructor() { }
+  constructor() { 
+    this.isHomeActive='active';
+  }
 
   ngOnInit() {
-    this.isHomeActive='active';
+    
   }
 
   activateLink(linkName){

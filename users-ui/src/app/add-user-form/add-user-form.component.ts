@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { User } from '../types/user'
 import { UserService } from '../user.service';
 import { Subject } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms'
 
 
@@ -28,7 +28,7 @@ export class AddUserFormComponent implements OnInit {
 
   addUserSubject = new Subject();
 
-  constructor(private userService: UserService) { 
+  constructor(private userService: UserService, private router: Router) { 
 
   }
 
@@ -46,8 +46,10 @@ export class AddUserFormComponent implements OnInit {
         )
     )
     this.addUserSubject.next();
+    this.callParent(); 
 
-    this.callParent();
+    this.router.navigateByUrl('');
+
   }
 
 
