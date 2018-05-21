@@ -27,7 +27,6 @@ export class UserLoginComponent implements OnInit {
         this.userService.getByUserName(this.userName)
         .subscribe(response => {
           this.user = response;
-          console.log(response);
           if(response==null){
             this.errorMessage = "User Not Found"
           } else{
