@@ -52,6 +52,11 @@ public class UsersController {
         return userRepository.findBylastName(lastName);
     }
 
+    @GetMapping("/getByuserName/{userName}")
+    public User getByuserName(@PathVariable String userName){
+        return userRepository.getByuserName(userName);
+    }
+
     @PostMapping("/")
     public User createNewUser(@RequestBody User newUser) {
         return userRepository.save(newUser);
