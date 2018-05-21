@@ -37,7 +37,10 @@ body{
     display:flex;
     flex-wrap:wrap;
 }
-
+.userTile a{
+    margin-top:10px;
+    float:right;
+}
 
 
 

@@ -1,4 +1,6 @@
-<a routerLink="/">Home</a>
-<div *ngIf="user">
+<div *ngIf="user" class="userHome">
 Hello {{user.userName}}
+
+
+This is the user specific home page for {{user.firstName}} {{user.lastName}}
 </div>
