@@ -18,7 +18,7 @@ export class UserHomeComponent implements OnInit {
     this.route.params.subscribe( params => this.userId = params.userId);
   }
 
-  results: any;
+  toilets: any;
   userId: number;
   user: any;
   userSubject =new Subject();
@@ -40,7 +40,8 @@ export class UserHomeComponent implements OnInit {
     .subscribe(uid=>
         this.toiletSearchService.getToilets(this.borough)
         .subscribe(response => {
-          this.results = response;
+          this.toilets = response;
+          
         })
     )
   }

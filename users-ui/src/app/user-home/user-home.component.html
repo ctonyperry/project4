@@ -2,13 +2,5 @@
 Hello {{user.userName}}
 This is the user specific home page for {{user.firstName}} {{user.lastName}}.
 
-<select (change)="getList($event.target.value)">
-    <option>-- Select a borough</option>
-    <option>Brooklyn</option>
-    <option>Bronx</option>
-    <option>Queens</option>
-    <option>Manhattan</option>
-    <option>Staten Island</option>   
-</select>
-{{results|json}}
 </div>
+<app-toilet-search></app-toilet-search>
