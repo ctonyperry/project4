@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { User } from '../types/user'
 import { UserService } from '../user.service';
 import { Subject } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms'
+
 
 
 @Component({
@@ -40,7 +41,10 @@ export class AddUserFormComponent implements OnInit {
         )
     )
     this.addUserSubject.next();
-
+    this.updateEvent.emit(event);
 
   }
+
+
+
 }

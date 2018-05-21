@@ -1,3 +1,13 @@
+.user{
+    margin: 5px auto;
+    text-align: left;
+}
+.user span{
+    display:block;
+    margin-left: 2px;
+}
+
+
 /* .user{
     padding: 5px;
     display: flex;        

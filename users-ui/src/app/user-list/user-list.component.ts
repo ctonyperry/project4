@@ -1,3 +1,5 @@
+import { AddUserFormComponent } from './../add-user-form/add-user-form.component';
+import { AddUserComponent } from './../add-user/add-user.component';
 
 import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
@@ -20,6 +22,8 @@ import {DataSource} from '@angular/cdk/collections';
 export class UserListComponent implements OnInit {
 
   users: any;
+  updateUserSubject = new Subject();
+  addUserSubject = new Subject();
   userSubject = new Subject();
   deleteUserSubject = new Subject();
   private userToDelete; 
@@ -35,20 +39,7 @@ export class UserListComponent implements OnInit {
           this.users = response;
         })
     )
-
-    // this.deleteUserSubject
-    // .subscribe(uid=>
-    //     this.userService.deleteUser(user.id)
-    //     .subscribe(response=>{                
-    //       let index = this.users.indexOf(this.userToDelete );
-    //       this.users.splice(index, 1);   
-    //       this.getUsers();       
-    //     }         
-    //     )
-    //)
-
     this.getUsers();
-
   }
 
   deleteUser(userId){
@@ -65,13 +56,24 @@ export class UserListComponent implements OnInit {
     this.userSubject.next();
     
   }
-  enterEditMode(){
-    this.editing = true;
-    console.log('editmode');
+  enterEditMode(user){
+    user.editing = true;
 
   }
-  leaveEditMode(){
-    this.editing = false;
+  leaveEditMode(user){
+    user.editing = false;
+    this.updateUser(user);
 
+  }
+  updateUser(user){
+    this.updateUserSubject
+    .subscribe(uid=>
+        this.userService.updateUser(user)
+        .subscribe(response=>{                
+               console.log(response)
+        }         
+        )
+    )
+    this.updateUserSubject.next();
   }
 }
