@@ -78,6 +78,7 @@ export class UserListComponent implements OnInit {
         )
     )
     this.updateUserSubject.next();
+    this.cancelEditMode(user);
   }
 
   updateAfterAddUser(){

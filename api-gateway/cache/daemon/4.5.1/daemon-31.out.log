@@ -990,3 +990,4 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 [2m2018-05-21 19:55:58.032[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.c.n.zuul.web.ZuulHandlerMapping     [0;39m [2m:[0;39m No routes found from RouteLocator
 [2m2018-05-21 19:55:58.032[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.c.n.z.f.pre.PreDecorationFilter     [0;39m [2m:[0;39m No route found for uri: /users/
 [2m2018-05-21 19:55:59.706[0;39m [33m WARN[0;39m [35m76[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mo.s.c.n.z.f.pre.PreDecorationFilter     [0;39m [2m:[0;39m No route found for uri: /users/
+[2m2018-05-21 19:56:25.991[0;39m [32m INFO[0;39m [35m76[0;39m [2m---[0;39m [2m[trap-executor-0][0;39m [36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
