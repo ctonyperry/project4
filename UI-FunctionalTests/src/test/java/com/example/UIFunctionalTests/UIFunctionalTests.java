@@ -36,7 +36,6 @@ public class UIFunctionalTests {
         open("http://localhost:4200/admin");
         $$(".userTile").shouldHaveSize(initialUserCount+1);
 
-
         //Test Delete user
         $(By.cssSelector(".deleteButton:last-of-type")).click();
         $$(".userTile").shouldHaveSize(initialUserCount);

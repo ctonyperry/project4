@@ -1,7 +1,9 @@
+import { ToiletSearchComponent } from './../toilet-search/toilet-search.component';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
+import { ToiletSearchComponent } from './../toiletsearch.service';
 
 
 @Component({
