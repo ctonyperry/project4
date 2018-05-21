@@ -453,3 +453,59 @@
 2018-05-21 19:08:25.168  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
 2018-05-21 19:09:25.170  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
 2018-05-21 19:10:25.170  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:11:24.147  INFO 77 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2018-05-21 19:11:25.170  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:12:25.170  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:13:25.173  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2018-05-21 19:14:25.174  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:15:25.175  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:16:25.175  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:17:25.176  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:18:25.177  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:19:25.178  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:20:25.179  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:21:25.179  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:22:25.180  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:23:25.181  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:24:25.183  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:25:25.183  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:26:24.148  INFO 77 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2018-05-21 19:26:25.184  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:27:25.184  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:28:25.184  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:29:25.185  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:30:25.185  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:31:25.185  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:32:25.186  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:33:25.187  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:34:25.187  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:35:25.188  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:36:25.189  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:37:25.189  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:38:25.191  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:39:25.191  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:40:25.191  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:41:24.150  INFO 77 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2018-05-21 19:41:25.192  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:42:25.193  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:43:25.193  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:44:25.194  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:45:25.194  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:46:25.195  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:47:25.196  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:48:25.197  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:49:25.198  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:50:25.199  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:51:25.201  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:52:25.202  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:53:25.203  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-21 19:54:25.204  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:54:29.917  INFO 77 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USERS/10.1.4.17:users:8081 with status DOWN (replication=false)
+2018-05-21 19:54:29.927  INFO 77 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USERS/10.1.4.17:users:8081 (replication=false)
+2018-05-21 19:54:30.422  INFO 77 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USERS/10.1.4.17:users:8081 with status DOWN (replication=true)
+2018-05-21 19:54:30.423  INFO 77 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance USERS/10.1.4.17:users:8081 (replication=true)
+2018-05-21 19:54:39.759  WARN 77 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: USERS/10.1.4.17:users:-1
+2018-05-21 19:54:39.759  INFO 77 --- [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): USERS - 10.1.4.17:users:-1
+2018-05-21 19:55:25.204  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-21 19:55:42.383  INFO 77 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USERS/10.1.4.17:users:8081 with status UP (replication=false)
+2018-05-21 19:55:42.886  INFO 77 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USERS/10.1.4.17:users:8081 with status UP (replication=true)

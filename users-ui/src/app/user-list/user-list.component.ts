@@ -59,7 +59,6 @@ export class UserListComponent implements OnInit {
   }
   enterEditMode(user){
     user.editing = true;
-
   }
   leaveEditMode(user){
     user.editing = false;

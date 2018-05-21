@@ -63,13 +63,12 @@ public class UsersController {
         this.userRequest = userRequest;
 
         User userFromDb = userRepository.findOne(userId);
-
-
         userFromDb.setUserName(userRequest.getUserName());
         userFromDb.setFirstName(userRequest.getFirstName());
         userFromDb.setLastName(userRequest.getLastName());
-
+        userFromDb.setEmail(userRequest.getEmail());
         return userRepository.save(userFromDb);
+
     }
 
 }

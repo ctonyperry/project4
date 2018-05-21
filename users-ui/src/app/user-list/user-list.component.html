@@ -1,8 +1,8 @@
+<app-add-user-form (addUserEvent)="updateAfterAddUser()">
+</app-add-user-form>
 
-<app-add-user-form (addUserEvent)="updateAfterAddUser()"></app-add-user-form>
 
-
-<div *ngIf="users">
+<!-- <div *ngIf="users">
   <div class="flex-container" *ngFor="let user of users">
 
     <div class="user" *ngIf="!this.user.editing">
@@ -33,9 +33,37 @@
         <button (click)="leaveEditMode(user)">Update User</button>
         <button (click)="leaveEditMode(user)" value={{user.id}}>Cancel</button>
       </div>
-    </div>
+    </div> 
 
 
 
   </div>
+</div>-->
+<div class="userTileContainer" *ngIf="users">
+  <div class="userTile" *ngFor="let user of users">
+    <!--Display Template-->
+    <div *ngIf="!this.user.editing">
+    <img src="/assets/images/head.png" />
+    <span>{{user.userName}}</span>
+    <span>{{user.firstName}} {{user.lastName}}</span>
+    <span>{{user.email}}</span>
+    <span>
+        <button (click)="enterEditMode(user)">Edit User</button>
+        <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete</button>
+    </span>
+  </div>
+  <!--Edit Form Template-->
+  <div *ngIf="this.user.editing">
+      <img src="/assets/images/head.png" />
+      <span><input type="text" [(ngModel)]="user.userName"/></span>
+      <span><input type="text" [(ngModel)]="user.firstName" /><input type="text" [(ngModel)]="user.lastName" /></span>
+      <span><input type="text" [(ngModel)]="user.email"/></span>
+      <span>
+          <button (click)="updateUser(user)">Update User</button>
+          <button (click)="leaveEditMode(user)" value={{user.id}}>Cancel</button>
+      </span>
+    </div>
+
+</div>
+
 </div>
