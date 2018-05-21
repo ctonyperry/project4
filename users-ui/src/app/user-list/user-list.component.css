@@ -1,11 +1,26 @@
+
 .user{
-    margin: 5px auto;
-    text-align: left;
+    height: 125px;
+    width: 325px;
+    border: 1px solid #ccc;
+    text-align:left;
+    padding: 15px;
 }
-.user span{
+.user span {
     display:block;
-    margin-left: 2px;
+    margin: 5px auto 5px auto;
 }
+.user .controlButtons {
+
+    text-align: right;
+}
+
+.firstAndLastName input {
+    display:inline;
+    margin: 5px auto 5px auto;
+}
+
+
 
 
 /* .user{

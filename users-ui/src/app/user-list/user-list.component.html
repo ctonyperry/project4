@@ -1,26 +1,41 @@
 
-<a routerLink="/adduser">Add User</a>
-<app-add-user-form></app-add-user-form>
+<app-add-user-form (addUserEvent)="updateAfterAddUser()"></app-add-user-form>
+
 
 <div *ngIf="users">
-<div class="user flex-container" *ngFor="let user of users">
-  <div class="user" *ngIf="!this.user.editing">
-  <span class="userName">User Name: {{user.userName}}</span>
-  <span class="firstName">Name: {{user.firstName}} {{user.lastName}}</span>
-  <span class="userEmail">Email: {{user.email}}</span>
-  <button (click)="enterEditMode(user)">Edit User</button>
-  <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete!</button>
+  <div class="flex-container" *ngFor="let user of users">
+
+    <div class="user" *ngIf="!this.user.editing">
+
+      <span class="userName">User Name: {{user.userName}}</span>
+      <span class="firstName">Name: {{user.firstName}} {{user.lastName}}</span>
+      <span class="userEmail">Email: {{user.email}}</span>
+      <span class="controlButtons">
+        <button (click)="enterEditMode(user)">Edit User</button>
+        <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete</button>
+      </span>
+      <a routerLink="user/{{user.id}}">Impersonate {{user.userName}}</a>
+    </div>
+
+    <div *ngIf="this.user.editing" class="user">
+      <div class="userName">User Name:
+        <input type="text" [(ngModel)]="user.userName" />
+      </div>
+      <div class="firstAndLastName">
+        Name:
+        <input type="text" [(ngModel)]="user.firstName" />
+        <input type="text" [(ngModel)]="user.lastName" />
+      </div>
+      <div class="userEmail">Email:
+        <input type="text" [(ngModel)]="user.email" />
+      </div>
+      <div class="controlButtons">
+        <button (click)="leaveEditMode(user)">Update User</button>
+        <button (click)="leaveEditMode(user)" value={{user.id}}>Cancel</button>
+      </div>
+    </div>
+
+
+
   </div>
-  <div *ngIf="this.user.editing" class="user">
-      <span class="userName">User Name: <input type="text" [(ngModel)]="user.userName"/></span>
-      <span class="firstName">
-        Name: <input type="text" [(ngModel)]="user.firstName"/> <input type="text" value="{{user.lastName}}"/></span>
-      <span class="userEmail">Email: <input type="text" value="{{user.email}}"/></span>
-      <button (click)="leaveEditMode(user)">Update User</button>
-      <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete</button>
-  </div>
-
-
-
-</div>
 </div>

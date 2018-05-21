@@ -43,6 +43,15 @@ public class UsersController {
 
 
 
+    public long getUserCount(){
+        return userRepository.count();
+    }
+
+    @GetMapping("/getByLastName/{lastName}")
+    public Iterable<User> findByLastName(@PathVariable String lastName){
+        return userRepository.findBylastName(lastName);
+    }
+
     @PostMapping("/")
     public User createNewUser(@RequestBody User newUser) {
         return userRepository.save(newUser);

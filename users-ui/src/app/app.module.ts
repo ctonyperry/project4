@@ -9,7 +9,8 @@ import { AddUserFormComponent } from './add-user-form/add-user-form.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { AddUserComponent } from './add-user/add-user.component'
+import { AddUserComponent } from './add-user/add-user.component';
+import { UserHomeComponent } from './user-home/user-home.component'
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
   {
     path: 'edituser/:userId',
     component: EditUserFormComponent
+  },
+  {
+    path: 'user/:userId',
+    component: UserHomeComponent
   },
 {
   path: '',
@@ -32,7 +37,8 @@ const routes = [
     EditUserFormComponent,
     AddUserFormComponent,
     UserListComponent,
-    AddUserComponent
+    AddUserComponent,
+    UserHomeComponent
   ],
   imports: [
     BrowserModule,

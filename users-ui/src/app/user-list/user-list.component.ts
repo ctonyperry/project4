@@ -21,6 +21,7 @@ import {DataSource} from '@angular/cdk/collections';
 })
 export class UserListComponent implements OnInit {
 
+  newUser: User  = new User(); 
   users: any;
   updateUserSubject = new Subject();
   addUserSubject = new Subject();
@@ -65,6 +66,9 @@ export class UserListComponent implements OnInit {
     this.updateUser(user);
 
   }
+  cancelEditMode(user){
+    user.editing = false;
+  }
   updateUser(user){
     this.updateUserSubject
     .subscribe(uid=>
@@ -76,4 +80,16 @@ export class UserListComponent implements OnInit {
     )
     this.updateUserSubject.next();
   }
+
+  updateAfterAddUser(){
+    this.userSubject
+    .subscribe(uid=>
+        this.userService.getUsers()
+        .subscribe(response => {
+          this.users = response;
+        })
+    )
+    this.getUsers();
+  }
+
 }

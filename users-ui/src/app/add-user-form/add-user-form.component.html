@@ -1,5 +1,15 @@
-    <input name="userName"  [(ngModel)]="user.userName" (keyup)="change">
-    <input name="firstName" [(ngModel)]="user.firstName">
-    <input name="lastName" [(ngModel)]="user.lastName">
-    <input name="email" [(ngModel)]="user.email">
+    <div>
+            userName: <input name="userName"  [(ngModel)]="user.userName" (keyup)="change"><br/>
+            First Name: <input name="firstName" [(ngModel)]="user.firstName"><br/>
+            Last Name:<input name="lastName" [(ngModel)]="user.lastName"><br/>
+            Email: <input name="email" [(ngModel)]="user.email"><br/>
     <button (click)="addUser(user)">Add User</button>
+</div>
+
+    <!-- <div>
+  userName:  <input type="text" [(ngModel)]="newUser.userName" />
+  First Name:  <input type="text" [(ngModel)]="newUser.firstName" />
+  Last Name:   <input type="text" [(ngModel)]="newUser.lastName" />
+  Email:  <input type="text" [(ngModel)]="newUser.email" />
+  <button (click)="addUser(newUser)">Add User</button>
+</div> -->

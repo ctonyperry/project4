@@ -13,6 +13,11 @@ import { FormsModule } from '@angular/forms'
   styleUrls: ['./add-user-form.component.css']
 })
 export class AddUserFormComponent implements OnInit {
+  @Output() addUserEvent = new EventEmitter<string>();
+
+  callParent() {
+    this.addUserEvent.emit('updated users');
+  }
 
   user={
     userName:null,
@@ -41,8 +46,8 @@ export class AddUserFormComponent implements OnInit {
         )
     )
     this.addUserSubject.next();
-    this.updateEvent.emit(event);
 
+    this.callParent();
   }
 
 

@@ -7,9 +7,11 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.List;
 
 public interface UserRepository extends CrudRepository<User, Long>{
+    Iterable<User> findBylastName(String lastName);
 
 
 
