@@ -1,15 +1,15 @@
 <select (change)="getList($event.target.value)">
-    <option>-- Select a borough</option>
-    <option>Brooklyn</option>
-    <option>Bronx</option>
-    <option>Queens</option>
-    <option>Manhattan</option>
-    <option>Staten Island</option>   
+  <option>-- Select a borough</option>
+  <option>Brooklyn</option>
+  <option>Bronx</option>
+  <option>Queens</option>
+  <option>Manhattan</option>
+  <option>Staten Island</option>
 </select>
-<div *ngFor="let toilet of toilets">
-    {{toilet.name}}<br/>
-    {{toilet.location}}<br/>
-    {{toilet.open_year_round}}
-
-
+<div class="toiletTileContainer" *ngFor="let toilet of toilets">
+  <div class="toiletTile">
+    <h4>{{toilet.name}}</h4>
+    <span> {{toilet.location}}</span>
+    <span>{{toilet.open_year_round}}</span>
+  </div>
 </div>

@@ -9,22 +9,19 @@ import { ToiletSearchService } from './../toiletsearch.service';
 @Component({
   selector: 'app-user-home',
   templateUrl: './user-home.component.html',
-  styleUrls: ['./user-home.component.css'],
-  providers: [ToiletSearchService]
+  styleUrls: ['./user-home.component.css']
 })
 export class UserHomeComponent implements OnInit {
 
-  constructor(private userService: UserService, private route: ActivatedRoute, private toiletSearchService: ToiletSearchService) { 
+  constructor(private userService: UserService, private route: ActivatedRoute) { 
     this.route.params.subscribe( params => this.userId = params.userId);
   }
 
-  toilets: any;
+
   userId: number;
   user: any;
   userSubject =new Subject();
-  toiletSearchSubject = new Subject();
 
-  borough: any;
 
   ngOnInit() {
     this.userSubject
@@ -36,14 +33,7 @@ export class UserHomeComponent implements OnInit {
     )
     this.getUser();
 
-    this.toiletSearchSubject
-    .subscribe(uid=>
-        this.toiletSearchService.getToilets(this.borough)
-        .subscribe(response => {
-          this.toilets = response;
-          
-        })
-    )
+
   }
 
   getUser(){
@@ -51,10 +41,5 @@ export class UserHomeComponent implements OnInit {
 
   }
 
-  getList(borough){
 
-    this.borough = borough;
-    this.toiletSearchSubject.next();
-
-  }
 }
