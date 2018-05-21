@@ -48,7 +48,7 @@ export class AddUserFormComponent implements OnInit {
     this.addUserSubject.next();
     this.callParent(); 
 
-    this.router.navigateByUrl('');
+    this.router.navigateByUrl('/admin');
 
   }
 
