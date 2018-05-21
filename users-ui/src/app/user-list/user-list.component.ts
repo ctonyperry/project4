@@ -40,6 +40,7 @@ export class UserListComponent implements OnInit {
           this.users = response;
         })
     )
+    this.updateAfterAddUser();
     this.getUsers();
   }
 
@@ -49,7 +50,6 @@ export class UserListComponent implements OnInit {
       console.log(resp);
       this.userSubject.next();
     });
-    //this.deleteUserSubject.next();
   }
   getUsers(){
     this.userService.getUsers();

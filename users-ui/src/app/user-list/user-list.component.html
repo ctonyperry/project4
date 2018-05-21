@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="userTileContainer" *ngIf="users">
   <div class="userTile" *ngFor="let user of users">
     <!--Display Template-->
@@ -10,7 +11,7 @@
         <button (click)="enterEditMode(user)">Edit User</button>
         <button (click)="deleteUser($event.target.value)" value={{user.id}}>Delete</button>
     </span>
-    <a routerLink="user/{{user.id}}">Impersonate User</a>
+    <a routerLink="/user/{{user.id}}">Impersonate User</a>
   </div>
   <!--Edit Form Template-->
   <div *ngIf="this.user.editing">

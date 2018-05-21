@@ -11,7 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AddUserComponent } from './add-user/add-user.component';
 import { UserHomeComponent } from './user-home/user-home.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { UserLoginComponent } from './user-login/user-login.component'
 
 const routes = [
   {
@@ -26,8 +28,13 @@ const routes = [
     path: 'user/:userId',
     component: UserHomeComponent
   },
+  {
+    path: 'userlogin',
+    component: UserLoginComponent
+
+  },
 {
-  path: '',
+  path: 'admin',
   component: UserListComponent
 }
 ];
@@ -40,7 +47,9 @@ const routes = [
     UserListComponent,
     AddUserComponent,
     UserHomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    LandingPageComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,

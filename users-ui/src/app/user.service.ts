@@ -25,4 +25,7 @@ export class UserService{
         return this.http.post('/api/users/', user);
 
     }
+    getByUserName(userName){
+        return this.http.get('/api/users/getByuserName/' + userName)
+    }
 }
