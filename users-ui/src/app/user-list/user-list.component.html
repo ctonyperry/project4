@@ -15,10 +15,9 @@
   </div>
   <!--Edit Form Template-->
   <div *ngIf="this.user.editing">
-      <img src="/assets/images/head.png" />
-      <span><input type="text" [(ngModel)]="user.userName"/></span>
-      <span><input type="text" [(ngModel)]="user.firstName" /><input type="text" [(ngModel)]="user.lastName" /></span>
-      <span><input type="text" [(ngModel)]="user.email"/></span>
+      <span><span class="formLabel">Username</span><input type="text" [(ngModel)]="user.userName"/></span>
+      <span><span class="formLabel">First/Last</span><input type="text" [(ngModel)]="user.firstName" /><input type="text" [(ngModel)]="user.lastName" /></span>
+      <span><span class="formLabel">Email</span><input type="text" [(ngModel)]="user.email"/></span>
       <span>
           <button (click)="updateUser(user)">Update User</button>
           <button (click)="leaveEditMode(user)" value={{user.id}}>Cancel</button>

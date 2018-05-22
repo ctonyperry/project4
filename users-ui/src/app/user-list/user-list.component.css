@@ -5,13 +5,16 @@ body{
     
 }
 .userTile{
-    flex: 0 0 200px;
+    flex: 0 0 250px;
     min-height: 80px;
     border: 1px solid silver;
     padding:5px 10px 5px 10px;
     margin: 25px;
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.29);
 
+}
+.userTile input{
+    width:200px;
 }
 .userTile span{
     margin-bottom:5px;
