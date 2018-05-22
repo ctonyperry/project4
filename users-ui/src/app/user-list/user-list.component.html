@@ -10,7 +10,7 @@
     <span>
         <button (click)="enterEditMode(user)">Edit User</button>
         <button (click)="deleteUser($event.target.value)" value={{user.id}} class="deleteButton">Delete</button>
-    </span>
+    </span><br/>
     <a routerLink="/user/{{user.id}}">Impersonate User</a>
   </div>
   <!--Edit Form Template-->
