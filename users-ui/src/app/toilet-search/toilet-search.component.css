@@ -1,0 +1,23 @@
+.toiletTileContainer{
+    display:block;
+    width: 800px;
+    text-align: left;
+    margin: 25px 100px 25px 100px;
+}
+
+.toiletTile{
+  display: block;
+  margin-bottom:25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+
+}
+
+.toiletTile span h4{
+display: block;
+    
+}
+.searchControls{
+    text-align:left;
+    margin: 10px 150px 10px 150px;
+}

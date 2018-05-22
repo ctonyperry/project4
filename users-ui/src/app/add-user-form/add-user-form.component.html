@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+   <div class="addUserForm">
+            <span>Username:</span> <input name="userName"  [(ngModel)]="user.userName" (keyup)="change"><br/>
+            <span>First Name: </span><input name="firstName" [(ngModel)]="user.firstName"><br/>
+            <span>Last Name:</span><input name="lastName" [(ngModel)]="user.lastName"><br/>
+            <span>Email:</span> <input name="email" [(ngModel)]="user.email"><br/>
+    <button id="addUserButton" (click)="addUser(user)">Add User</button>
+</div>
