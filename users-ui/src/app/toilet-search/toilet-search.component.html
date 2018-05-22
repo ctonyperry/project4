@@ -1,3 +1,4 @@
+<div class="searchControls">
 <h3>List public bathrooms by borough</h3>
 <select (change)="getList($event.target.value)">
   <option>-- Select a borough</option>
@@ -7,6 +8,8 @@
   <option>Manhattan</option>
   <option>Staten Island</option>
 </select>
+</div>
+
 <div class="toiletTileContainer" *ngFor="let toilet of toilets">
   <div class="toiletTile">
     <h4>{{toilet.name}}</h4>
