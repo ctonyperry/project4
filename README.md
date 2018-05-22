@@ -4,7 +4,7 @@ This is a basic implementation of a User API, and a front-end to manage those us
 
 #### Users API Service
 * /users-api
-* Unit teststests available in users-api/src/test/java/com/example/usersapi/
+* Unit tests available in users-api/src/test/java/com/example/usersapi/
 
 #### Angular Front End
 * /users-ui
