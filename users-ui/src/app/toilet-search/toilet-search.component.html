@@ -1,3 +1,4 @@
+<h3>List public bathrooms by borough</h3>
 <select (change)="getList($event.target.value)">
   <option>-- Select a borough</option>
   <option>Brooklyn</option>
@@ -9,7 +10,7 @@
 <div class="toiletTileContainer" *ngFor="let toilet of toilets">
   <div class="toiletTile">
     <h4>{{toilet.name}}</h4>
-    <span> {{toilet.location}}</span>
-    <span>{{toilet.open_year_round}}</span>
+    <span><h5>Location: {{toilet.location}}</h5></span>
+    <span>Open Year-Round: {{toilet.open_year_round}}</span>
   </div>
 </div>

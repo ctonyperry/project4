@@ -1,16 +1,15 @@
 .toiletTileContainer{
-    display:flex;
-    flex-wrap:wrap;
-    width:100%;
+    display:block;
+    width: 800px;
+    text-align: left;
+    margin: 25px 100px 25px 100px;
 }
 
 .toiletTile{
-    flex: 0 0 200px;
-    min-height: 80px;
-    border: 1px solid silver;
-    padding:5px 10px 5px 10px;
-    margin: 25px;
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.29);
+  display: block;
+  margin-bottom:25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
 
 }
 
