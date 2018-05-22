@@ -1,4 +1,4 @@
 <ul>
-    <li><a [ngClass]="isHomeActive" (click)="activateLink('home')" routerLink="/admin">Manage Users</a></li>
-    <li><a [ngClass]="isAddUserActive" routerLink="/adduser" (click)="activateLink('adduser')">Add User</a></li>
+    <li><a routerLinkActive="active" routerLink="/admin">Manage Users</a></li>
+    <li><a routerLinkActive="active" routerLink="/adduser">Add User</a></li>
   </ul>
