@@ -1,6 +1,11 @@
 <div *ngIf="user" class="userHome">
-Hello {{user.userName}}
-This is the user specific home page for {{user.firstName}} {{user.lastName}}.
+<img width="50px" src='/assets/images/head.png'/>
+
+<div>
+This is the home page for {{user.firstName}} {{user.lastName}}.
+</div>
 
 </div>
+<span *ngIf="user" class="userName">{{user.userName}}</span>
+<br/>
 <app-toilet-search></app-toilet-search>
