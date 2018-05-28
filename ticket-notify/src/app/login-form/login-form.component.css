@@ -1,0 +1,16 @@
+.loginFormContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loginFormContainer * {
+width: 200px;
+}
+.errorMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}

@@ -1,5 +1,6 @@
 package com.example.usersapi.controllers;
 
+import com.example.usersapi.models.LoginRequest;
 import com.example.usersapi.models.User;
 import com.example.usersapi.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,10 @@ public class UsersController {
 //        return userRepository.findAllPageable(pageable);
 //    }
 
+    @PostMapping("/login/")
+    public User checkLogin(@RequestBody LoginRequest loginRequest){
+        return userRepository.getByuserNameAndPassword(loginRequest.userName, loginRequest.password);
+    }
 
 
     public long getUserCount(){

@@ -14,6 +14,7 @@ public interface UserRepository extends CrudRepository<User, Long>{
     Iterable<User> findBylastName(String lastName);
     User getByuserName(String userName);
 
+    User getByuserNameAndPassword(String userName, String password);
 
 
 }

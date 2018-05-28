@@ -1,3 +1,13 @@
-<p>
-  login-form works!
-</p>
+<div class="loginFormContainer">
+  <mat-form-field>
+    <input matInput [(ngModel)]="userName" placeholder="Username" [type]="hide ? 'username' : 'text'">
+  </mat-form-field>
+    <mat-form-field>
+      <input matInput [(ngModel)]="password" placeholder="Password" [type]="hide ? 'text' : 'password'">
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="checkLogin(userName, password)">Login</button>
+    <mat-error *ngIf="invalidLogin" class="errorMessage">{{getErrorMessage()}}</mat-error>
+  </div>

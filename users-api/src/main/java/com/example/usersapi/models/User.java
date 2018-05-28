@@ -1,5 +1,6 @@
 package com.example.usersapi.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import javax.persistence.*;
 
@@ -24,5 +25,11 @@ public class User {
     @Column(name = "EMAIL")
     private String email;
 
+    @Column(name="ADMIN")
+    private boolean admin;
+
+    @JsonIgnore
+    @Column(name = "PASSWORD")
+    private String password;
 
 }
