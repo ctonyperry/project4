@@ -40,6 +40,9 @@ export class LoginFormComponent implements OnInit {
               this.invalidLogin = false;
               this.errorMessage = "";
               this.user = response;
+              
+              //This is a terrible and insecure way to store user data
+              //Don't ever do anything like this in production
               localStorage.setItem("user", JSON.stringify(this.user));
               if (this.user.admin) {
                 this.router.navigate(['admin']);

@@ -25,6 +25,7 @@ import { FormsModule } from '@angular/forms';
 import { LogoutPageComponent } from './logout-page/logout-page.component';
 import { CarListComponent } from './car-list/car-list.component';
 import { AddCarComponent } from './add-car/add-car.component';
+import { RegisterUserFormComponent } from './register-user-form/register-user-form.component';
 
 const routes = [
   {
@@ -60,7 +61,8 @@ const routes = [
     UserPageComponent,
     LogoutPageComponent,
     CarListComponent,
-    AddCarComponent
+    AddCarComponent,
+    RegisterUserFormComponent
   ],
   imports: [
     BrowserModule,
