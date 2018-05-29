@@ -1,0 +1,9 @@
+.userList{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:50px;
+}
+.controlButton{
+min-width:20px;
+}

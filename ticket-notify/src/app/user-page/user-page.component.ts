@@ -9,7 +9,9 @@ export class UserPageComponent implements OnInit {
 
   constructor() { }
 
+  user: any;
   ngOnInit() {
+    this.user = JSON.parse(localStorage.getItem("user"));
   }
 
 }

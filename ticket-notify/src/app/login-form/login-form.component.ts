@@ -49,7 +49,6 @@ export class LoginFormComponent implements OnInit {
 
             }
           }, err => {
-            console.log(err);
             this.invalidLogin = true;
             this.errorMessage = 'Error communicating with user service';
           }

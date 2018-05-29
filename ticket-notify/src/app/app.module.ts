@@ -17,12 +17,13 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInput } from '@angular/material';
+import { MatToolbarModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInput, MatCardModule } from '@angular/material';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule, MatLabel, MatFormFieldControl } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { LogoutPageComponent } from './logout-page/logout-page.component';
 
 const routes = [
   {
@@ -32,6 +33,10 @@ const routes = [
   {
     path: 'admin',
     component: AdminPageComponent
+  },
+  {
+    path: 'logout',
+    component: LogoutPageComponent
   },
   {
     path: 'profile',
@@ -52,7 +57,8 @@ const routes = [
     WelcomePageComponent,
     AdminPageComponent,
     NavBarComponent,
-    UserPageComponent
+    UserPageComponent,
+    LogoutPageComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +72,7 @@ const routes = [
     MatListModule,
     MatInputModule,
     MatFormFieldModule,
+    MatCardModule,
     FormsModule,
     HttpClientModule
 
