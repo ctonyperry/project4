@@ -1,16 +1,42 @@
 <nav-bar></nav-bar>
 <div class="userProfile">
-        <mat-card class="example-card">
-                <mat-card-header>
-                  <div mat-card-avatar class="profile-image"></div>
-                  <mat-card-title>{{user.firstName}} {{user.lastName}}</mat-card-title>
-                  <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
-                </mat-card-header>
-                <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
-                <mat-card-content>
-<p><app-car-list [userId]="user.id">
-    
-    </app-car-list></p>
-                </mat-card-content>
-              </mat-card>
+  <mat-card class="user-card">
+    <mat-card-header *ngIf="!editingProfile">
+      <mat-card-title>
+        <div>{{user.firstName}} {{user.lastName}}</div>
+      </mat-card-title>
+      <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
+      <button mat-icon-button (click)="toggleProfileEdit()">
+        <mat-icon aria-label="edit user profile button">edit</mat-icon>Edit my info</button>
+    </mat-card-header>
+    <mat-card-header *ngIf="editingProfile">
+      <mat-card-title>
+
+        <mat-form-field>
+          <input matInput placeholder="First Name" [(ngModel)]="user.firstName">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Last Name" [(ngModel)]="user.lastName">
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+          <input matInput placeholder="Email Name" [(ngModel)]="user.email">
+        </mat-form-field>
+
+
+      </mat-card-title>
+      <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
+      <button mat-icon-button (click)="saveUserInfo()">
+        <mat-icon aria-label="edit user profile button">check</mat-icon>Done</button>
+    </mat-card-header>
+
+
+    <mat-card-content>
+      <p>
+        <app-car-list [userId]="user.id">
+
+        </app-car-list>
+      </p>
+    </mat-card-content>
+  </mat-card>
 </div>

@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { TicketCardComponent } from './ticket-card/ticket-card.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { EditUserCardComponent } from './edit-user-card/edit-user-card.component';
 import { LoginFormComponent } from './login-form/login-form.component';
@@ -17,7 +16,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule,MatGridListModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInput, MatCardModule } from '@angular/material';
+import { MatToolbarModule,MatGridListModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInput, MatCardModule, MatDialog } from '@angular/material';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import {MatInputModule} from '@angular/material/input';
@@ -25,7 +24,7 @@ import { MatFormFieldModule, MatLabel, MatFormFieldControl } from '@angular/mate
 import { FormsModule } from '@angular/forms';
 import { LogoutPageComponent } from './logout-page/logout-page.component';
 import { CarListComponent } from './car-list/car-list.component';
-import { CarCardComponent } from './car-card/car-card.component';
+import { AddCarComponent } from './add-car/add-car.component';
 
 const routes = [
   {
@@ -49,7 +48,6 @@ const routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    TicketCardComponent,
     TicketListComponent,
     EditUserCardComponent,
     LoginFormComponent,
@@ -62,7 +60,7 @@ const routes = [
     UserPageComponent,
     LogoutPageComponent,
     CarListComponent,
-    CarCardComponent
+    AddCarComponent
   ],
   imports: [
     BrowserModule,

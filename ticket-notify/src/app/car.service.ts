@@ -18,6 +18,14 @@ export class CarService {
     getTicketsByLicensePlate(licensePlate){
         return this.http.get('https://data.cityofnewyork.us/resource/uvbq-3m68.json?$where=plate=%27' + licensePlate + '%27');    
     }
+    deleteCarById(carId){
+
+        return this.http.delete(`${environment.apiHost}/users/cars/` + carId);
+    }
+
+    addNewCar(userId, plate){
+        return this.http.post(`${environment.apiHost}/users/cars/`, {"userId": userId, "plate":plate});
+    }
     // checkLogin(userName, password) {
     //     let loginRequest = {
     //         "userName": userName,
