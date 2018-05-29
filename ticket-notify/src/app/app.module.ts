@@ -17,13 +17,15 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInput, MatCardModule } from '@angular/material';
+import { MatToolbarModule,MatGridListModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInput, MatCardModule } from '@angular/material';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule, MatLabel, MatFormFieldControl } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { LogoutPageComponent } from './logout-page/logout-page.component';
+import { CarListComponent } from './car-list/car-list.component';
+import { CarCardComponent } from './car-card/car-card.component';
 
 const routes = [
   {
@@ -58,7 +60,9 @@ const routes = [
     AdminPageComponent,
     NavBarComponent,
     UserPageComponent,
-    LogoutPageComponent
+    LogoutPageComponent,
+    CarListComponent,
+    CarCardComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +77,7 @@ const routes = [
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
+    MatGridListModule,
     FormsModule,
     HttpClientModule
 

@@ -1,3 +1,8 @@
-<p>
-  ticket-list works!
-</p>
+
+<div class="ticketList" *ngFor="let ticket of tickets">
+Violation: {{ticket.violation}}<br/>
+Issue Date: {{ticket.issue_date}}<br/>
+Amount Due: {{ticket.amount_due}}<br/>
+<a href='{{ticket.summons_image}}'>View</a>
+
+</div>

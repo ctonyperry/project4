@@ -1,0 +1,17 @@
+.userProfile{
+    display: flex; 
+    padding: 30px;
+ 
+}
+mat-card.mat-card{
+   margin:auto;
+   width:90%;
+   min-width:350px;
+   max-width:900px
+}
+
+.profile-image{
+    background-image: url(/assets/images/head.png);
+    background-size: cover;
+    margin-right: 20px;
+}

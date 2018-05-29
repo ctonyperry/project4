@@ -1,0 +1,11 @@
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title *ngIf="cars">My Cars</mat-card-title>
+  </mat-card-header>
+
+  <app-car-card *ngFor="let car of cars" [car]="car">
+  </app-car-card>
+
+</mat-card>
+

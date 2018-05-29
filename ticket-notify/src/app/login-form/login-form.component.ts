@@ -46,7 +46,6 @@ export class LoginFormComponent implements OnInit {
               } else {
                 this.router.navigate(['profile']);
               }
-
             }
           }, err => {
             this.invalidLogin = true;
@@ -54,10 +53,6 @@ export class LoginFormComponent implements OnInit {
           }
           )
       )
-
-
-
-
 
   }
   getErrorMessage() {
@@ -68,18 +63,3 @@ export class LoginFormComponent implements OnInit {
   }
 
 }
-
-// else{
-
-//   console.log(response.valueOf(HttpErrorResponse));
-//   // this.invalidLogin = false; 
-//   // this.errorMessage = ""; 
-//   // this.user = response;
-//   // if(this.user.admin){
-//   // this.router.navigate(['admin']);
-//   // }else{
-//   //   this.router.navigate(['profile']);
-//   // }
-
-
-// }
