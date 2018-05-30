@@ -10,14 +10,13 @@
     <input matInput [(ngModel)]="user.lastName" placeholder="Last Name" [type]="hide ? 'lastName' : 'text'">
   </mat-form-field>
   <mat-form-field>
-    <input matInput [(ngModel)]="user.email" placeholder="Email" [type]="hide ? 'email' : 'text'" [errorStateMatcher]="matcher">
+    <input matInput [(ngModel)]="user.email" placeholder="Email" [type]="hide ? 'email' : 'text'">
   </mat-form-field>
   <mat-form-field>
     <input matInput [(ngModel)]="user.password" placeholder="Password" [type]="hide ? 'text' : 'password'">
     <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
   </mat-form-field>
   <button mat-raised-button color="primary" (click)="registerUser()">Register</button>
-  <mat-error *ngIf="invalidLogin" class="errorMessage">{{getErrorMessage()}}</mat-error>
   <br/>
   <span>Already have an account?
     <a routerLink=''>Log in.</a>

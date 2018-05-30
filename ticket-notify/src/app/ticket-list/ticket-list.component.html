@@ -1,4 +1,5 @@
-
+<h4>Amount Due for this Vehicle: {{totalOwed | currency}}</h4>
+<br/>
 <div class="ticketList" *ngFor="let ticket of tickets">
 Violation: {{ticket.violation}}<br/>
 Issue Date: {{ticket.issue_date}}<br/>

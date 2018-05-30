@@ -21,6 +21,7 @@ export class LoginFormComponent implements OnInit {
   invalidLogin = false;
   errorMessage = "";
   user: any;
+  hide: any;
 
   constructor(private userService: UserService, private router: Router) {
 

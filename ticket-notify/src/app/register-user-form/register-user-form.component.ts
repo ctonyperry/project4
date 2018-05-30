@@ -18,6 +18,7 @@ export class RegisterUserFormComponent implements OnInit {
   checkUsernameSubject = new Subject();
   user = new User();
   constructor(private userService: UserService) { }
+  hide: any;
 
   ngOnInit() {
 
