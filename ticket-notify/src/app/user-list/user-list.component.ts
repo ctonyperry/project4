@@ -31,6 +31,7 @@ export class UserListComponent implements OnInit {
       })
     })
     this.listUserSubject.next();
+    
     this.deleteUserSubject.subscribe(userId=>{
       this.userService.deleteUser(userId).subscribe(res=>{
         console.log(JSON.stringify(res));

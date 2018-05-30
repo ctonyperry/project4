@@ -1,3 +1,7 @@
+import { HttpClient, HttpHandler } from '@angular/common/http';
+import { TicketListComponent } from './../ticket-list/ticket-list.component';
+
+import { MatCardTitle, MatCardHeader, MatCard } from '@angular/material';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CarListComponent } from './car-list.component';
@@ -8,7 +12,9 @@ describe('CarListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CarListComponent ]
+      declarations: [ CarListComponent,MatCardTitle, MatCardHeader, TicketListComponent, MatCard ],
+      imports:[],
+      providers:[HttpClient, HttpHandler]
     })
     .compileComponents();
   }));

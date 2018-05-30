@@ -28,7 +28,7 @@ public class User {
     @Column(name="ADMIN")
     private boolean admin;
 
-    @JsonIgnore
+
     @Column(name = "PASSWORD")
     private String password;
 

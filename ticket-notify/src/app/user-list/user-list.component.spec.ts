@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NavBarComponent } from './../nav-bar/nav-bar.component';
 
 import { UserListComponent } from './user-list.component';
 

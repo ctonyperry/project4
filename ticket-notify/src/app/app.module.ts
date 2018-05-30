@@ -33,6 +33,10 @@ const routes = [
     component: WelcomePageComponent
   },
   {
+    path: 'register',
+    component: RegisterUserFormComponent
+  },
+  {
     path: 'admin',
     component: AdminPageComponent
   },

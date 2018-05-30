@@ -16,6 +16,7 @@ export class UserService {
             "userName": userName,
             "password": password
         }
+        
         let response = this.http.post(`${environment.apiHost}/users/login/`, loginRequest);
         return response;
     }
@@ -33,8 +34,16 @@ export class UserService {
     updateUser(user: User) {
         return this.http.patch(`${environment.apiHost}/users/` + user.id, user);
     }
-    addUser(user: User) {
-        return this.http.post(`${environment.apiHost}/users/`, user);
+    addUser(user: any) {
+        let _user =     {
+            "userName": user.userName,
+            "firstName": user.firstName,
+            "lastName": user.lastName,
+            "email": user.email,
+            "password":user.password,
+            "admin":"false"
+        }
+        return this.http.post(`${environment.apiHost}/users/`, _user);
 
     }
     getByUserName(userName) {

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LogoutPageComponent } from './logout-page.component';
+import { Router } from '@angular/router';
 
 describe('LogoutPageComponent', () => {
   let component: LogoutPageComponent;
@@ -8,7 +9,11 @@ describe('LogoutPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LogoutPageComponent ]
+      declarations: [ LogoutPageComponent ],
+      providers:[{
+        provide: Router,
+        useClass: class { navigate = jasmine.createSpy("navigate"); }
+      }]
     })
     .compileComponents();
   }));

@@ -1,3 +1,5 @@
+import { HttpClient, HttpHandler } from '@angular/common/http';
+import { CarService } from './../car.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TicketListComponent } from './ticket-list.component';
@@ -8,7 +10,8 @@ describe('TicketListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TicketListComponent ]
+      declarations: [ TicketListComponent ],
+      providers:[CarService, HttpClient, HttpHandler]
     })
     .compileComponents();
   }));

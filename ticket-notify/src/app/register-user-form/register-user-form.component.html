@@ -1,3 +1,58 @@
-<p>
-  register-user-form works!
-</p>
+<div class="registerFormContainer">
+
+  <mat-form-field>
+    <input matInput (keyup)="checkUserExist()" [(ngModel)]="user.userName" placeholder="Username" [type]="hide ? 'username' : 'text'">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="user.firstName" placeholder="First Name" [type]="hide ? 'firstName' : 'text'">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="user.lastName" placeholder="Last Name" [type]="hide ? 'lastName' : 'text'">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="user.email" placeholder="Email" [type]="hide ? 'email' : 'text'" [errorStateMatcher]="matcher">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="user.password" placeholder="Password" [type]="hide ? 'text' : 'password'">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="registerUser()">Register</button>
+  <mat-error *ngIf="invalidLogin" class="errorMessage">{{getErrorMessage()}}</mat-error>
+  <br/>
+  <span>Already have an account?
+    <a routerLink=''>Log in.</a>
+  </span>
+</div>
+
+
+
+
+
+<!-- 
+  <form #registerForm="ngForm">
+      <div class="form-group">
+          <label for="userName">Username</label>
+          <input type="text" class="form-control" id="userName" name="usderName" required [(ngModel)]="user.userName">
+          {{spy.className}}
+        </div>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" required [(ngModel)]="user.firstName" #spy>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" required [(ngModel)]="user.lastName">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" name="email" required [(ngModel)]="user.email">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="text" class="form-control" id="password" name="password" [(ngModel)]="user.password">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form> -->

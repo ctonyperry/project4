@@ -57,4 +57,7 @@ export class UserCardComponent implements OnInit {
     return this.errorMessage;
 
   }
+  impersonateUser(){
+        
+  }
 }
