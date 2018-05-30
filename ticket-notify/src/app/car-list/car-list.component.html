@@ -3,7 +3,7 @@
   <mat-card-header>
     <mat-card-title *ngIf="cars">My Cars</mat-card-title><button mat-button color="primary" (click)="addCar()">Add a Car</button>
   </mat-card-header>
-<div  *ngFor="let car of cars">
+<div class="carContainer" *ngFor="let car of cars">
   <div class="carRow">
       <div class="licensePlateNumber">{{car.plate}}</div>
       <div class="deleteButton" (click)="deleteCar(car.id)"><button mat-button color="warn">Delete</button></div>

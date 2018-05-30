@@ -1,9 +1,20 @@
-<h4>Amount Due for this Vehicle: {{totalOwed | currency}}</h4>
+<div *ngIf="tickets.length>0">
+<h4></h4>
 <br/>
-<div class="ticketList" *ngFor="let ticket of tickets">
-Violation: {{ticket.violation}}<br/>
-Issue Date: {{ticket.issue_date}}<br/>
-Amount Due: {{ticket.amount_due}}<br/>
-<a href='{{ticket.summons_image}}'>View</a>
-
+<table class="ticketsTable">
+    <tr class="statusRow">
+        <td colspan=4>Amount Due for this Vehicle: {{totalOwed | currency}}</td>
+    </tr>
+        <th>Violation</th>
+        <th>Date</th>
+        <th>Amount Due</th>
+        <th>View Ticket</th>
+        <tr *ngFor="let ticket of tickets">
+            <td>{{ticket.violation}}</td>
+            <td>{{ticket.issue_date}}</td>
+            <td>{{ticket.amount_due}}</td>
+            <td><a href='{{ticket.summons_image}}'>View Ticket</a></td>
+        </tr>
+</table>
 </div>
+<div *ngIf="tickets.length==0">Congratulations. You have no tickets on this vehicle</div>

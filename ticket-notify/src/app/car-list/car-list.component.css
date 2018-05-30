@@ -19,4 +19,8 @@ mat-card-header{
     color:navy;
     padding: 10px;
 }
+.carContainer{
+    padding: 10px;
+    border:1px solid #ddd;
+}
 
