@@ -36,11 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/usersapi/controllers/UsersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="43" lean-forward="true" selection-start-line="33" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="478">
+              <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersApplicationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/usersapi/UsersApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,6 +119,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -567,7 +588,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/example/usersapi/UsersApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/usersapi/repositories/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/usersapi/models/LoginRequest.java" />
@@ -577,6 +597,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/usersapi/controllers/CarsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/usersapi/repositories/CarRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/usersapi/models/User.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/usersapi/UsersApplicationTests.java" />
       </list>
     </option>
   </component>
@@ -624,115 +646,48 @@
               <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="usersapi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="usersapi" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="usersapi" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="usersapi" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="users-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="users-api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="usersapi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -743,6 +698,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -756,7 +716,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UsersApiApplication">
+  <component name="RunManager" selected="JUnit.UsersApplicationTests.canAddUser">
     <configuration name="UsersApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="SPRING_PROFILES_ACTIVE" value="dev" />
@@ -786,15 +746,44 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.usersapi" />
       <option name="MAIN_CLASS_NAME" value="com.example.usersapi.UsersApplicationTests" />
-      <option name="METHOD_NAME" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="dev" />
+      </envs>
+      <patterns />
+    </configuration>
+    <configuration name="UsersApplicationTests.canAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="users-api_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.usersapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.usersapi" />
+      <option name="MAIN_CLASS_NAME" value="com.example.usersapi.UsersApplicationTests" />
+      <option name="METHOD_NAME" value="canAddUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="dev" />
+      </envs>
       <patterns />
     </configuration>
     <configuration name="UsersApplicationTests.canDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -810,6 +799,29 @@
       <option name="PACKAGE_NAME" value="com.example.usersapi" />
       <option name="MAIN_CLASS_NAME" value="com.example.usersapi.UsersApplicationTests" />
       <option name="METHOD_NAME" value="canDeleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UsersApplicationTests.canGetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="users-api_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.usersapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.usersapi" />
+      <option name="MAIN_CLASS_NAME" value="com.example.usersapi.UsersApplicationTests" />
+      <option name="METHOD_NAME" value="canGetAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -862,12 +874,16 @@
       <item itemvalue="Application.UsersApiApplication" />
       <item itemvalue="JUnit.UsersApplicationTests" />
       <item itemvalue="JUnit.UsersApplicationTests.canDeleteUser" />
+      <item itemvalue="JUnit.UsersApplicationTests.canGetAllUsers" />
+      <item itemvalue="JUnit.UsersApplicationTests.canAddUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UsersApplicationTests.canAddUser" />
+        <item itemvalue="JUnit.UsersApplicationTests" />
+        <item itemvalue="JUnit.UsersApplicationTests.canGetAllUsers" />
         <item itemvalue="Application.UsersApiApplication" />
         <item itemvalue="JUnit.UsersApplicationTests.canDeleteUser" />
-        <item itemvalue="JUnit.UsersApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -885,27 +901,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 13m 44s.xml">
-      <configuration name="UsersApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 14m 09s.xml">
-      <configuration name="UsersApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 15m 12s.xml">
-      <configuration name="UsersApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 16m 06s.xml">
-      <configuration name="UsersApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 18m 10s.xml">
-      <configuration name="UsersApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 21m 45s.xml">
-      <configuration name="UsersApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 23m 19s.xml">
-      <configuration name="UsersApplicationTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UsersApplicationTests - 2018.05.21 at 11h 33m 56s.xml">
       <configuration name="UsersApplicationTests" configurationId="JUnit" />
     </history-entry>
@@ -915,6 +910,27 @@
     <history-entry file="UsersApplicationTests_canDeleteUser - 2018.05.21 at 12h 54m 26s.xml">
       <configuration name="UsersApplicationTests.canDeleteUser" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UsersApplicationTests - 2018.05.30 at 14h 25m 25s.xml">
+      <configuration name="UsersApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersApplicationTests_canGetAllUsers - 2018.05.30 at 14h 25m 55s.xml">
+      <configuration name="UsersApplicationTests.canGetAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersApplicationTests_canGetAllUsers - 2018.05.30 at 14h 27m 26s.xml">
+      <configuration name="UsersApplicationTests.canGetAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersApplicationTests_canGetAllUsers - 2018.05.30 at 14h 28m 20s.xml">
+      <configuration name="UsersApplicationTests.canGetAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersApplicationTests_canGetAllUsers - 2018.05.30 at 14h 29m 19s.xml">
+      <configuration name="UsersApplicationTests.canGetAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersApplicationTests - 2018.05.30 at 14h 29m 42s.xml">
+      <configuration name="UsersApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersApplicationTests_canAddUser - 2018.05.30 at 14h 30m 22s.xml">
+      <configuration name="UsersApplicationTests.canAddUser" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -923,13 +939,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4957265" weight="0.32923076" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.507326" side_tool="true" weight="0.3302564" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.492674" weight="0.3302564" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.492674" visible="true" weight="0.5220513" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -943,7 +960,6 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497558" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4957265" weight="0.32923076" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1306,16 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/usersapi/UsersApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/usersapi/UsersApiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1337,13 +1343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/usersapi/models/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1361,13 +1360,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1400,8 +1392,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/usersapi/controllers/UsersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="43" lean-forward="true" selection-start-line="33" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="478">
+          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/usersapi/UsersApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

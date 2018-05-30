@@ -657,3 +657,23 @@
 2018-05-30 21:22:30.413  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2018-05-30 21:23:25.278  INFO 77 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
 2018-05-30 21:23:30.413  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-30 21:24:30.414  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-30 21:25:30.415  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-30 21:26:30.416  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-30 21:27:30.417  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-30 21:28:30.419  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-30 21:29:30.420  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-30 21:29:43.633  WARN 77 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: USERS/10.1.4.17:users:-1
+2018-05-30 21:29:43.633  INFO 77 --- [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): USERS - 10.1.4.17:users:-1
+2018-05-30 21:30:06.583  WARN 77 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: USERS/10.1.4.17:users:-1
+2018-05-30 21:30:06.583  INFO 77 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): USERS - 10.1.4.17:users:-1
+2018-05-30 21:30:30.420  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-30 21:30:46.180  WARN 77 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: USERS/10.1.4.17:users:-1
+2018-05-30 21:30:46.181  INFO 77 --- [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): USERS - 10.1.4.17:users:-1
+2018-05-30 21:31:30.421  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2018-05-30 21:32:30.423  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-30 21:33:30.424  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2018-05-30 21:34:26.591  WARN 77 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: USERS/10.1.4.17:users:-1
+2018-05-30 21:34:26.591  INFO 77 --- [nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): USERS - 10.1.4.17:users:-1
+2018-05-30 21:34:30.424  INFO 77 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+thread 15: client disconnection detected, canceling the build

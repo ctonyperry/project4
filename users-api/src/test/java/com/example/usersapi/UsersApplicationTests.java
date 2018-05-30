@@ -37,6 +37,7 @@ public class UsersApplicationTests {
 	    newUser.setLastName("!!LAST_NAME!!");
 	    newUser.setEmail("EMAIL");
 	    newUser.setUserName("USER_NAME");
+	    newUser.setPassword(("PASSWORD"));
         returnedUser = usersController.createNewUser(newUser);
         long newUserCount =usersController.getUserCount();
 
