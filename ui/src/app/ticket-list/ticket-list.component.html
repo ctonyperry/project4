@@ -1,14 +1,16 @@
-<div *ngIf="tickets">
+<div *ngIf="tickets.length>0">
 <h4></h4>
 <br/>
 <table class="ticketsTable">
     <tr class="statusRow">
         <td colspan=4>Amount Due for this Vehicle: {{totalOwed | currency}}</td>
     </tr>
+    <tr>
         <th class="violation">Violation</th>
         <th class="issueDate">Date</th>
         <th class="amountDue">Amount Due</th>
         <th class="ticketImageLink">View Ticket</th>
+    </tr>
         <tr [className]="ticket.amount_due!=0 ? 'alert' : 'ticketList'" class="ticketList" *ngFor="let ticket of tickets">
             <td class="violation">{{ticket.violation}}</td>
             <td class="issueDate">{{ticket.issue_date}}</td>
@@ -17,4 +19,4 @@
         </tr>
 </table>
 </div>
-<div *ngIf="!tickets">Congratulations. You have no tickets on this vehicle</div>
+<div *ngIf="tickets.length==0">Congratulations! You have no tickets on this vehicle</div>
