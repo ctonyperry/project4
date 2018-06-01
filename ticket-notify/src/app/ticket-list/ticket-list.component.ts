@@ -14,12 +14,12 @@ export class TicketListComponent implements OnInit {
   getTicketsSubject = new Subject();
   tickets: any;
   totalOwed: number = 0;
+  
   constructor(private carService: CarService) { 
 
   }
 
   ngOnInit() {
-
     this.getTicketsSubject.subscribe(success=>{
       this.carService.getTicketsByLicensePlate(this.car.plate).subscribe(response=>{
         this.tickets = response;
@@ -34,7 +34,6 @@ export class TicketListComponent implements OnInit {
       this.totalOwed += this.tickets[i].amount_due;
     }
     this.totalOwed = this.totalOwed / 100000;
-    console.log(this.totalOwed);
   }
 
 }

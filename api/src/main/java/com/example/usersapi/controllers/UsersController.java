@@ -36,12 +36,6 @@ public class UsersController {
         return HttpStatus.OK;
     }
 
-//    @PostMapping("/")
-//    public Iterable<User> getUsersWithPagination(@RequestBody Pageable pageable){
-//
-//        return userRepository.findAllPageable(pageable);
-//    }
-
     @PostMapping("/login/")
     public User checkLogin(@RequestBody LoginRequest loginRequest){
         return userRepository.getByuserNameAndPassword(loginRequest.userName, loginRequest.password);

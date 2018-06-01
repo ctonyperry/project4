@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Subject, pipe } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { User } from './../types/user';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,8 +18,10 @@ export class RegisterUserFormComponent implements OnInit {
   addUserSubject = new Subject();
   checkUsernameSubject = new Subject();
   user = new User();
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
   hide: any;
+  isAccountCreateError: boolean = false;
+  registrationErrorMessage: string = '';
 
   ngOnInit() {
 
@@ -37,9 +40,23 @@ export class RegisterUserFormComponent implements OnInit {
       });
 
     this.addUserSubject.subscribe(success => {
-      this.userService.addUser(this.user).subscribe(response => {
-        console.log(response);
-      })
+      this.userService.addUser(this.user).subscribe(success => {
+        this.isAccountCreateError = false;
+        this.registrationErrorMessage = '';
+        this.router.navigate(['']);
+      },
+        error => {
+          console.log(error);
+          let errorMessage: any = error.error.message;
+            this.registrationErrorMessage = "Can't reach registration service"; 
+
+            if(errorMessage.indexOf('constraint [users_email_key]')>0){
+              this.registrationErrorMessage = "Error: Duplicate Email Exists"; 
+            }
+
+          this.isAccountCreateError = true;
+          
+        })
     });
   }
 
