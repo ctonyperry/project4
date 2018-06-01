@@ -39,13 +39,13 @@ services:
     volumes:
       - './flyway/conf:/flyway/conf'
       - './flyway/sql:/flyway/sql'      
-  users-api:
+  api:
     image: anapsix/alpine-java:8_jdk_unlimited
     ports:
       - '8081:8081'
     working_dir: /app
     volumes:
-      - ./users-api:/app
+      - ./api:/app
     depends_on:
       - eureka 
     command: './gradlew bootRun'

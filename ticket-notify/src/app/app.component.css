@@ -2,8 +2,13 @@
     /* background-image:url(/assets/images/noparking.jpg);
     background-size: 100%;
     background-position-y: -120px; */
-    background-color:peru;
-    max-height:100px;
+    background-color:tomato;
+    min-height:75px;
+    max-height:220px;
     font-size:2em;
     color:white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:50px;
 }
