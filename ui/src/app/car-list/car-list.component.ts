@@ -30,7 +30,6 @@ export class CarListComponent implements OnInit {
       success => {
         this.carService.getCarsByUserId(this.userId).subscribe(response => {
           this.cars = (response as Array<Car>);
-          console.log(JSON.stringify(response));
         })
       },
       error => { }

@@ -6,8 +6,8 @@
     </tr>
     <tr>
         <th class="violation">Violation</th>
-        <th class="issueDate">Date</th>
-        <th class="amountDue">Amount Due</th>
+        <th class="issueDate"><a href="javascript:;" (click)="sortByDate()">Date</a></th>
+        <th class="amountDue"><a href="javascript:;" (click)="sortByAmount()">Amt Due</a></th>
         <th class="ticketImageLink">View Ticket</th>
     </tr>
         <tr [className]="ticket.amount_due!=0 ? 'alert' : 'ticketList'" class="ticketList" *ngFor="let ticket of tickets">
