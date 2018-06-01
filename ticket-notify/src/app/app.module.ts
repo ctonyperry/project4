@@ -1,27 +1,28 @@
+import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatToolbarModule,MatGridListModule,  MatButtonModule, 
+         MatSidenavModule, MatIconModule, MatListModule, 
+         MatInput, MatCardModule,MatDialogModule, MatCardTitle } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule, MatLabel, MatFormFieldControl } from '@angular/material/form-field';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { EditUserCardComponent } from './edit-user-card/edit-user-card.component';
 import { LoginFormComponent } from './login-form/login-form.component';
-
 import { NewUserCardComponent } from './new-user-card/new-user-card.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule,MatGridListModule,  MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatInput, MatCardModule, MatDialog } from '@angular/material';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserPageComponent } from './user-page/user-page.component';
-import {MatInputModule} from '@angular/material/input';
-import { MatFormFieldModule, MatLabel, MatFormFieldControl } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
 import { LogoutPageComponent } from './logout-page/logout-page.component';
 import { CarListComponent } from './car-list/car-list.component';
 import { AddCarComponent } from './add-car/add-car.component';
@@ -52,38 +53,39 @@ const routes = [
 
 @NgModule({
   declarations: [
+    AddCarComponent,
+    AdminPageComponent,
     AppComponent,
-    TicketListComponent,
+    CarListComponent,
     EditUserCardComponent,
     LoginFormComponent,
+    LogoutPageComponent,
+    NavBarComponent,
     NewUserCardComponent,
+    RegisterUserFormComponent,
+    TicketListComponent,
     UserCardComponent,
     UserListComponent,
-    WelcomePageComponent,
-    AdminPageComponent,
-    NavBarComponent,
     UserPageComponent,
-    LogoutPageComponent,
-    CarListComponent,
-    AddCarComponent,
-    RegisterUserFormComponent
+    WelcomePageComponent,
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatCardModule,
-    MatGridListModule,
+    BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LayoutModule,
+    MatButtonModule,
+    MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    RouterModule.forRoot(routes),
 
   ],
   providers: [],

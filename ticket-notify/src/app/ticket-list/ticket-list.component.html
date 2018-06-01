@@ -1,20 +1,20 @@
-<div *ngIf="tickets.length>0">
+<div *ngIf="tickets">
 <h4></h4>
 <br/>
 <table class="ticketsTable">
     <tr class="statusRow">
         <td colspan=4>Amount Due for this Vehicle: {{totalOwed | currency}}</td>
     </tr>
-        <th>Violation</th>
-        <th>Date</th>
-        <th>Amount Due</th>
-        <th>View Ticket</th>
-        <tr *ngFor="let ticket of tickets">
-            <td>{{ticket.violation}}</td>
-            <td>{{ticket.issue_date}}</td>
-            <td>{{ticket.amount_due}}</td>
-            <td><a href='{{ticket.summons_image}}'>View Ticket</a></td>
+        <th class="violation">Violation</th>
+        <th class="issueDate">Date</th>
+        <th class="amountDue">Amount Due</th>
+        <th class="ticketImageLink">View Ticket</th>
+        <tr [className]="ticket.amount_due!=0 ? 'alert' : 'ticketList'" class="ticketList" *ngFor="let ticket of tickets">
+            <td class="violation">{{ticket.violation}}</td>
+            <td class="issueDate">{{ticket.issue_date}}</td>
+            <td class="amountDue">{{ticket.amount_due}}</td>
+            <td class="ticketImageLink"><a target="_blank" href='{{ticket.summons_image}}'>View Ticket</a></td>
         </tr>
 </table>
 </div>
-<div *ngIf="tickets.length==0">Congratulations. You have no tickets on this vehicle</div>
+<div *ngIf="!tickets">Congratulations. You have no tickets on this vehicle</div>
