@@ -1,4 +1,4 @@
-# User Admin and User Portal
+# Ticket Notification Service and User Portal
 
 This is a basic implementation of a User API, and a front-end to manage those users. There is also a rudimentary "login" that displays a user home page, with basic API search functionality from the NYC City Record Online site. 
 
