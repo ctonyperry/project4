@@ -1,7 +1,6 @@
-<div *ngIf="tickets.length>0">
-<h4></h4>
-<br/>
-<table class="ticketsTable">
+<div *ngIf="tickets">
+
+<table class="ticketsTable" *ngIf="tickets.length>0">
     <tr class="statusRow">
         <td colspan=4>Amount Due for this Vehicle: {{totalOwed | currency}}</td>
     </tr>
@@ -18,5 +17,6 @@
             <td class="ticketImageLink"><a target="_blank" href='{{ticket.summons_image}}'>View Ticket</a></td>
         </tr>
 </table>
+
+<div *ngIf="!(tickets.length>0)" class="noTickets">Congratulations! You have no tickets on this vehicle</div>
 </div>
-<div *ngIf="tickets.length==0">Congratulations! You have no tickets on this vehicle</div>
